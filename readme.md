@@ -16,7 +16,7 @@ yarn build
 
 Run TypeScript compiler (tsc) to build the project.
 
-## **Start (Production):**
+## **Start (Production)**
 
 ```
 yarn start:prod
@@ -24,7 +24,7 @@ yarn start:prod
 
 Run TypeScript compiler (tsc) to build the project.
 
-## Start (Development)
+## **Start (Development)**
 
 ```
 yarn start:dev
@@ -32,7 +32,7 @@ yarn start:dev
 
 Starts the server in development mode using ts-node-dev.
 
-## Lint:
+## **Lint**
 
 ```
 yarn lint
@@ -40,7 +40,7 @@ yarn lint
 
 Runs ESLint to lint TypeScript files in the src directory.
 
-## Lint (Fix):
+## **Lint (Fix)**
 
 ```
 yarn lint:fix
@@ -48,7 +48,7 @@ yarn lint:fix
 
 Runs ESLint with auto-fix to fix linting issues.
 
-## Prettier:
+## **Prettier**
 
 ```
 yarn prettier
@@ -56,7 +56,7 @@ yarn prettier
 
 Runs Prettier to format source files according to defined rules.
 
-## Prettier (Fix):
+## **Prettier (Fix)**
 
 ```
 yarn prettier:fix
