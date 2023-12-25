@@ -44,7 +44,6 @@ Runs ESLint to lint TypeScript files in the src directory.
 
 ```
 yarn lint:fix
-
 ```
 
 Runs ESLint with auto-fix to fix linting issues.
