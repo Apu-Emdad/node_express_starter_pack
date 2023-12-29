@@ -1,7 +1,5 @@
 import { Schema, model } from 'mongoose';
-// import { Guardian, LocalGuardian, Student, UserName } from './student.interface';
-import { Guardian, LocalGuardian, Student, UserName } from '@src/student/student.interface';
-
+import { Guardian, LocalGuardian, Student, UserName } from './student.interface';
 
 const userNameSchema = new Schema<UserName>({
   firstName: {
@@ -44,7 +42,7 @@ const guardianSchema = new Schema<Guardian>({
   },
 });
 
-const localGuradianSchema = new Schema<LocalGuardian>({
+const localGuardianSchema = new Schema<LocalGuardian>({
   name: {
     type: String,
     required: true,
@@ -71,11 +69,11 @@ const studentSchema = new Schema<Student>({
   email: { type: String, required: true },
   contactNo: { type: String, required: true },
   emergencyContactNo: { type: String, required: true },
-  bloogGroup: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'],
+  bloodGroup: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'],
   presentAddress: { type: String, required: true },
-  permanentAddres: { type: String, required: true },
+  permanentAddress: { type: String, required: true },
   guardian: guardianSchema,
-  localGuardian: localGuradianSchema,
+  localGuardian: localGuardianSchema,
   profileImg: { type: String },
   isActive: ['active', 'blocked'],
 });
