@@ -7,11 +7,6 @@
     "module": "commonjs",
     "rootDir": "./src",
     "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "@src/*": ["src/*"]
-    },
-
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
