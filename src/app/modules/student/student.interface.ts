@@ -22,6 +22,7 @@ export type LocalGuardian = {
 
 export type Student = {
   id: string;
+  password: string;
   name: UserName;
   gender: 'male' | 'female';
   dateOfBirth?: string;
@@ -35,4 +36,5 @@ export type Student = {
   localGuardian: LocalGuardian;
   profileImg?: string;
   isActive: 'active' | 'blocked';
+  isDeleted: boolean;
 };
