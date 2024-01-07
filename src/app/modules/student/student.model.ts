@@ -157,6 +157,9 @@ const studentSchema = new Schema<TStudent, StudentModel>(
         return existingUser;
       },
     },
+    toJSON: {
+      virtuals: true,
+    },
   },
 );
 
@@ -192,7 +195,7 @@ studentSchema.pre('aggregate', function (next) {
 
 // virtual
 studentSchema.virtual('fullName').get(function () {
-  return this.name.firstName + this.name.middleName + this.name.lastName;
+  return this.name.firstName + ' ' + this.name.middleName + ' ' + this.name.lastName;
 });
 
 export const Student = model<TStudent, StudentModel>('Student', studentSchema);
